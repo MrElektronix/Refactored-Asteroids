@@ -49,7 +49,7 @@ public class SpawnerScript : MonoBehaviour {
 
 	[System.Serializable]
 	public class Wave {
-		public int enemyCount;
+		public int enemyCount ;
 		public float timeBetweenSpawns;
 	}
 
