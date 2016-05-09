@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour {
 		//transform.Translate (Vector3.forward * Time.deltaTime);
 		}
 
-	void OnColliderHit(Collider other)
+	void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Bullet")) {
 		
