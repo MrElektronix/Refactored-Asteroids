@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class Gyroscope : MonoBehaviour {
 	float xRot, yRot, zRot;
-	public float rotSpeed = 20f;
+	public float rotSpeed = 10f;
 
 	void Update(){
 		xRot = Input.acceleration.z * -180f;
