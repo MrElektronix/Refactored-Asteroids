@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3397386}
   - 136: {fileID: 13625380}
   - 23: {fileID: 2323986}
-  - 114: {fileID: 11420864}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -93,20 +92,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119044}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &11420864
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f2740fddc60aa9478ae767f7c095545, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 146088, guid: ce23909c1d4580d42a218f270242ef4f, type: 2}
-  muzzle: {fileID: 114796, guid: 2efc1f7cac3380348b93705ebba8695e, type: 2}
-  bulletforce: 500
 --- !u!114 &11498606
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -20,10 +20,9 @@ public class BulletSpawnerScript : MonoBehaviour {
 		{
 			GameObject TempBullet;
 			TempBullet = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation) as GameObject;
-			TempBullet.transform.Rotate (Vector3.forward * 90);
 			Rigidbody TempRigidbody;
 			TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
-			TempRigidbody.AddForce (transform.forward * bulletforce);
+			TempRigidbody.AddRelativeForce (Vector3.forward * bulletforce);
 			Destroy (TempBullet, 10.0f);
 
 
