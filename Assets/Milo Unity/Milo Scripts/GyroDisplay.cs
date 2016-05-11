@@ -7,11 +7,11 @@ public class GyroDisplay : MonoBehaviour {
 	public Text Gyro;
 
 	void Update(){
-		xRot = Input.acceleration.z * -180f;
+		//xRot = Input.acceleration.z * -180f;
 		yRot = Input.acceleration.x * -180f;
 		zRot = 0f;
 
 
-		Gyro.text = "(x: " + xRot + " ," + "y: " + yRot + " ," + "z: " + zRot + ")";
+		Gyro.text = "(y: " + yRot + " ," + "z: " + zRot + ")";
 	} 
 }
