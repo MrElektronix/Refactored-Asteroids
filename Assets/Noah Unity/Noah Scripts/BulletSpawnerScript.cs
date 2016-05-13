@@ -18,19 +18,16 @@ public class BulletSpawnerScript : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space))
 		{
-			GameObject TempBullet;
-			TempBullet = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation) as GameObject;
-			Rigidbody TempRigidbody;
-			TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
-			TempRigidbody.AddRelativeForce (Vector3.forward * bulletforce);
-			Destroy (TempBullet, 10.0f);
-
-
-				
-
-
+			Shoot ();
 		}
+	}
 
-	
+	public void Shoot() {
+		GameObject TempBullet;
+		TempBullet = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation) as GameObject;
+		Rigidbody TempRigidbody;
+		TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
+		TempRigidbody.AddRelativeForce (Vector3.forward * bulletforce);
+		Destroy (TempBullet, 10.0f);
 	}
 }
