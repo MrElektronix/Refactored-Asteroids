@@ -3,29 +3,21 @@ using System.Collections;
 
 
 public class Button : MonoBehaviour {
-	public Color defaultColor;
-	public Color selectedColor;
-	private Material mat;
-	private Renderer ren;
-
-	void Start() {
-		ren = GetComponent<Renderer> ();
-		mat = ren.material;
-	}
+	public GameObject bullet;
+	public GameObject muzzle;
+	public float bulletforce;
 
 	public void OnTouchDown() {
-		mat.color = selectedColor;
+		Debug.Log ("1");
+		Shoot ();
 	}
 
-	void OnTouchUp() {
-		mat.color = defaultColor;
-	}
-
-	void OnTouchStay() {
-		mat.color = selectedColor;
-	}
-
-	void OnTouchExit() {
-		mat.color = defaultColor;
+	public void Shoot() {
+		GameObject TempBullet;
+		TempBullet = Instantiate (bullet, muzzle.transform.position, muzzle.transform.rotation) as GameObject;
+		Rigidbody TempRigidbody;
+		TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
+		TempRigidbody.AddRelativeForce (Vector3.forward * bulletforce);
+		//Destroy (TempBullet, 10f);
 	}
 }
