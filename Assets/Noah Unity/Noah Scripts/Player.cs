@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
 			Destroy (other.gameObject); //Destroy de enemy als die in aanraking komt met de player
 			P_hp -= 25; //Haal 25 hp van de player af
 			print (P_hp); //Print HP 
+
 			}
 		}
 	}

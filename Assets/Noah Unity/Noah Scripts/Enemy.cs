@@ -4,13 +4,9 @@ using System.Collections;
 
 
 public class Enemy : MonoBehaviour {
-	
 
-
-
-
-
-	public int Health = 100;
+	public int Ehp = 100;
+	public int minHp = 0;
 	public int HitPoints = 25;
 	public int Speed = 10;
 
@@ -27,12 +23,16 @@ public class Enemy : MonoBehaviour {
 	void OnTriggerEnter(Collider other)//Als die in raking komt met een Bullet 
 	{
 		if (other.CompareTag("Bullet")) {
-		
 			Destroy (other.gameObject);//Destroy de bullet
-			Destroy (gameObject);//Destroy de enemy
+			Ehp -= HitPoints;
+			if(Ehp < minHp){
+			Destroy (gameObject);
+			}
+
 		}
 
 		
 	}
+
 
 }
