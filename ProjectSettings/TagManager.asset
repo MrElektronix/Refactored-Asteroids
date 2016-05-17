@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Muzzle
   - Enemy2
+  - Pickup
   layers:
   - Default
   - TransparentFX

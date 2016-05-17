@@ -24,14 +24,14 @@ public class Enemy : MonoBehaviour {
 		//transform.Translate (Vector3.forward * Time.deltaTime);
 		}
 
-	void OnTriggerEnter(Collider other)
+	void OnTriggerEnter(Collider other)//Als die in raking komt met een Bullet 
 	{
 		if (other.CompareTag("Bullet")) {
 		
-			Destroy (other.gameObject);
-			Destroy (gameObject);
-
+			Destroy (other.gameObject);//Destroy de bullet
+			Destroy (gameObject);//Destroy de enemy
 		}
+
 		
 	}
 
