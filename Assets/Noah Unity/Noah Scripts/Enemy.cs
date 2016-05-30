@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
 	public int minHp = 0;
 	public int HitPoints = 25;
 	public int Speed = 10;
-	public int ScoreValue = 10;
+	public int ScoreValue = 100;
 
 
 
