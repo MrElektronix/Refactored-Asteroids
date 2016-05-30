@@ -96,7 +96,7 @@ GameObject:
   - 114: {fileID: 364183}
   m_Layer: 0
   m_Name: Spawner1
-  m_TagString: Untagged
+  m_TagString: EnemySpawn1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   waves:
   - enemyCount: 3
     timeBetweenSpawns: 2
-  enemy: {fileID: 11442904, guid: d43a38471f774e241a1dbd58f9b2094d, type: 2}
+  enemy: {fileID: 11432540, guid: f77799c72ace2614ab0e76c9d18fdeb3, type: 2}
 --- !u!4 &364184
 Transform:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11413568, guid: 02ee6fec33ee02544b25d91d1ec50e39, type: 2}
       propertyPath: bulletforce
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 487848, guid: 02ee6fec33ee02544b25d91d1ec50e39, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1052,6 +1052,33 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &2046683169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2046683170}
+  m_Layer: 0
+  m_Name: Spawner2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2046683170
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046683169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: -195.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &2049269568
 GameObject:
   m_ObjectHideFlags: 0

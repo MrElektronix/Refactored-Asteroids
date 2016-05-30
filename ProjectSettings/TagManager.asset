@@ -7,8 +7,11 @@ TagManager:
   - Bullet
   - Enemy
   - Muzzle
-  - Enemy2
   - Pickup
+  - EnemySpawn1
+  - EnemySpawn2
+  - EnemySpawn3
+  - EnemySpawn4
   layers:
   - Default
   - TransparentFX
