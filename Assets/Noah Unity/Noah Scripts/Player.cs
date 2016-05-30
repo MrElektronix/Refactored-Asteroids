@@ -12,16 +12,19 @@ public class Player : MonoBehaviour {
 		
 	
 	}
-	void OnTriggerEnter(Collider other)
+	void OnTriggerEnemy(Collider other)
 	{
-		if(other.CompareTag("Enemy"))
+		if(other.gameObject.tag == "Enemy")
 		{
 			Destroy (other.gameObject); //Destroy de enemy als die in aanraking komt met de player
 			P_hp -= 25; //Haal 25 hp van de player af
 			print (P_hp); //Print HP 
-
 			}
+
 		}
+
+
+
 	}
 		
 			
