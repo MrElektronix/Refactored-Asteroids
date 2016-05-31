@@ -7,9 +7,6 @@ public class BulletSpawnerScript : MonoBehaviour {
 	public GameObject muzzle;
 	public float bulletforce;
 
-
-
-
 	// Use this for initialization
 	void Start () {
 	
@@ -29,7 +26,7 @@ public class BulletSpawnerScript : MonoBehaviour {
 		Rigidbody TempRigidbody;
 		TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
 		TempRigidbody.AddRelativeForce (Vector3.forward * bulletforce);
-		Destroy (TempBullet, 5.0f);
+		Destroy (TempBullet, 20.0f);
 
 
 	}

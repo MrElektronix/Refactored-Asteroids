@@ -10,9 +10,9 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameObject.tag == "EnemySpawn1") {
+		
 			transform.position = new Vector3(0f, 0f, z.z);
 			z.z -= 0.1f;
-		}
+
 	}
 }

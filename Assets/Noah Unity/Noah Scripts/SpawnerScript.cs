@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnerScript : MonoBehaviour {
 
 	public Wave[] waves;
-	public Enemy enemy;
+	public EnemyDeath enemy;
 
 	Wave currentWave;
 	int currentWaveNumber;
@@ -23,7 +23,7 @@ public class SpawnerScript : MonoBehaviour {
 			enemiesRemainingToSpawn--;
 			nextSpawnTime = Time.time + currentWave.timeBetweenSpawns;
 
-			Enemy spawnedEnemy = Instantiate(enemy, transform.position + Random.onUnitSphere * 10, Quaternion.identity) as Enemy;
+			EnemyDeath spawnedEnemy = Instantiate(enemy, transform.position + Random.onUnitSphere * 20, Quaternion.identity) as EnemyDeath;
 			//spawnedEnemy.OnDeath += OnEnemyDeath;
 
 		}
