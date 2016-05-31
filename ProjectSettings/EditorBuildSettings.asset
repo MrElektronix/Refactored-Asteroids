@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/Milo Unity/Milo Scenes/GyroTest2.unity
   - enabled: 1
     path: Assets/Milo Unity/Milo Scenes/GyroTest3.unity
+  - enabled: 1
+    path: Assets/Noah Unity/Noah Scenes/MainMenu.unity
