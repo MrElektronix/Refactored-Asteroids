@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour {
 	public int HitPoints = 25;
 	public int Speed = 10;
 	public int ScoreValue = 100;
+	public AudioClip Collision;
+	AudioSource audio;
+
 
 
 
@@ -27,6 +30,8 @@ public class Enemy : MonoBehaviour {
 		if (other.CompareTag("Bullet")) {
 			Destroy (other.gameObject);//Destroy de bullet
 			Ehp -= HitPoints;
+			audio.PlayOneShot (Collision, 0.8f);
+
 			if(Ehp < minHp){
 			Destroy (gameObject);
 			ScoreManager.score += ScoreValue;
