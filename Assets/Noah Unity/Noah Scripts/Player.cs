@@ -31,6 +31,16 @@ public class Player : MonoBehaviour {
 
 
 		}
+	void Update()
+	{
+		//if (P_hp >= Death)
+		//{
+		//Destroy (gameObject);
+		//SceneManager.LoadScene (GameOverScreen);
+
+	}
+
+
 
 
 
