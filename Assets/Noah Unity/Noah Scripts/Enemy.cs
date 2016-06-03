@@ -31,10 +31,9 @@ public class Enemy : MonoBehaviour {
 			Destroy (other.gameObject);//Destroy de bullet
 			Ehp -= HitPoints;
 			audio.PlayOneShot (Collision, 0.8f);
-
 			if(Ehp < minHp){
 			Destroy (gameObject);
-			ScoreManager.score += ScoreValue;
+			ScoreManager.score+= ScoreValue;
 			
 
 			}

@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour {
 
-	public int P_hp = 100;
+	public static int P_hp = 100;
+	public int Death = 0;
 
 
 
@@ -20,6 +23,12 @@ public class Player : MonoBehaviour {
 			P_hp -= 25; //Haal 25 hp van de player af
 			print (P_hp); //Print HP 
 			}
+		//if (P_hp >= Death)
+		//{
+			//Destroy (gameObject);
+			//SceneManager.LoadScene (GameOverScreen);
+
+
 
 		}
 
