@@ -5,13 +5,17 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	public int Ehp = 100;
-	public int minHp = 0;
-	public int HitPoints = 25;
-	public int Speed = 10;
-	public int ScoreValue = 100;
+	public int Ehp = 100; //Health
+	public int minHp = 0; //MinHealth
+	public int HitPoints = 25; //Damage on enemy 
+	public int Speed = 10; //Move Speed
+	public int ScoreValue = 100; //Worth
 	public AudioClip Collision;
 	AudioSource audio;
+
+
+
+
 
 
 
@@ -34,8 +38,6 @@ public class Enemy : MonoBehaviour {
 			if(Ehp < minHp){
 			Destroy (gameObject);
 			ScoreManager.score+= ScoreValue;
-			
-
 			}
 
 		}

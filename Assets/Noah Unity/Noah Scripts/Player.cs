@@ -23,12 +23,6 @@ public class Player : MonoBehaviour {
 			P_hp -= 25; //Haal 25 hp van de player af
 			print (P_hp); //Print HP 
 			}
-		//if (P_hp >= Death)
-		//{
-			//Destroy (gameObject);
-			//SceneManager.LoadScene (GameOverScreen);
-
-
 
 		}
 	void Update()
