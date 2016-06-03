@@ -9,14 +9,9 @@ public class ScoreManager : MonoBehaviour {
 
 	public static int score;
 
-
-
 	void Awake(){
 		text = GetComponent <Text>();
-
 		score = 0;
-
-
 	}
 
 
@@ -28,7 +23,5 @@ public class ScoreManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		text.text = "Score:" + score;
-
-	
 	}
 }
