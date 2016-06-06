@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 460544}
   - 114: {fileID: 11456244}
-  - 114: {fileID: 11476590}
   - 108: {fileID: 10859764}
+  - 114: {fileID: 11484776}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -43,7 +43,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182402}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166768}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -144,7 +144,7 @@ MonoBehaviour:
   HitPoints: 25
   Speed: 10
   ScoreValue: 100
---- !u!114 &11476590
+--- !u!114 &11484776
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -152,9 +152,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 166768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d383748d948ee4596f85b3bf66bc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 32e3c669438be5c49ace0872d27c1e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 484306, guid: 02ee6fec33ee02544b25d91d1ec50e39, type: 2}
+  Enemy: {fileID: 460544}
 --- !u!114 &11487898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,10 +182,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 7
-  m_Height: 13.399416
+  m_Radius: 9
+  m_Height: 13
   m_Direction: 1
-  m_Center: {x: 0.13603258, y: 3.5598977, z: 2.617911}
+  m_Center: {x: 0, y: 3.5598977, z: 2.617911}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
