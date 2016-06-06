@@ -33,6 +33,7 @@ public class FollowScript : MonoBehaviour {
 		if (distance <= AfstandAttack) {
 			//Attack Functie 
 
+
 		}
 
 	}
