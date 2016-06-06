@@ -105,7 +105,7 @@ Light:
   serializedVersion: 6
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -139,7 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d383748d948ee4596f85b3bf66bc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  z: {x: 0, y: 0, z: 0}
 --- !u!114 &11464960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,6 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5530f108c303ff4498e98d5b3966b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ehp: 100
+  minHp: 0
+  HitPoints: 25
+  Speed: 10
+  ScoreValue: 100
 --- !u!114 &11488866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,6 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5530f108c303ff4498e98d5b3966b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ehp: 100
+  minHp: 0
+  HitPoints: 25
+  Speed: 10
+  ScoreValue: 100
 --- !u!136 &13602222
 CapsuleCollider:
   m_ObjectHideFlags: 1
