@@ -44,7 +44,7 @@ public class GyroCamera : MonoBehaviour
 
 		transform.localRotation = newRotation;
 
-		transform.Rotate( 0f, 90f, 180f, Space.Self ); // space.self is to itself and another object.
+		transform.Rotate( 30f, 0f, 180f, Space.Self ); // space.self is to itself and another object.
 		transform.Rotate( 90f, 0f, 0f, Space.World ); // space.world is the position in the world.
 
 		// save the current gyro rotation for the next update
@@ -54,7 +54,7 @@ public class GyroCamera : MonoBehaviour
 	void ApplyCalibration()
 	{        
 		transform.localRotation = Input.gyro.attitude;
-		transform.Rotate( 0f, 90f, 180f, Space.Self ); // Swap "handedness" of quaternion from gyro.
+		transform.Rotate( 30f, 0f, 180f, Space.Self ); // Swap "handedness" of quaternion from gyro.
 		transform.Rotate( 90f, 0f, 0f, Space.World ); // Rotate to make sense as a camera pointing out the back of your device.
 
 		initialYAngle = transform.eulerAngles.y; // Save the angle around y axis in order to rotate the player accordingly

@@ -7,7 +7,6 @@ public class EnemyDeath : MonoBehaviour {
 	public int Ehp = 100;
 	public int minHp = 0;
 	public int HitPoints = 25;
-	public int Speed = 10;
 	public int ScoreValue = 100;
 
 	void OnTriggerEnter(Collider other)

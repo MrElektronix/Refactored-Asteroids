@@ -23,7 +23,7 @@ public class EnemyAttack : MonoBehaviour {
 		Debug.Log (direction);
 		if (distance <= AfstandAttack) {
 			//Attack Functie 
-			Debug.Log("shoot me");
+
 		}
 
 	}
