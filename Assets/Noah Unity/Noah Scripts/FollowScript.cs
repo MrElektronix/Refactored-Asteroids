@@ -31,7 +31,9 @@ public class FollowScript : MonoBehaviour {
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation (Player.position - transform.position), RotatieSp * Time.deltaTime);
 		transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 		if (distance <= AfstandAttack) {
-			//Attack Functie 
+			//werkt
+			Debug.Log("werkt");
+
 
 
 		}
