@@ -11,6 +11,11 @@ public class FollowScript : MonoBehaviour {
 	float MoveSpeed = 3.0f;
 	public int AfstandAttack = 10;
 
+	public GameObject Muzzle;
+	public GameObject Bullet;
+	public float Bulletforce;
+
+
 
 
 	void Awake()
@@ -32,13 +37,22 @@ public class FollowScript : MonoBehaviour {
 		transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 		if (distance <= AfstandAttack) {
 			//werkt
+			Shoot();
 			Debug.Log("werkt");
-
-
-
 		}
 
 	}
+	void Shoot()
+	{
+		GameObject TempBullet;
+		TempBullet = Instantiate (Bullet, Muzzle.transform.position, Muzzle.transform.rotation) as GameObject;
+		Rigidbody TempRigidbody;
+		TempRigidbody = TempBullet.GetComponent<Rigidbody> ();
+		TempRigidbody.AddRelativeForce (Vector3.forward * Bulletforce);
+		Destroy (TempBullet, 20.0f);
+
+	}
+
 
 
 

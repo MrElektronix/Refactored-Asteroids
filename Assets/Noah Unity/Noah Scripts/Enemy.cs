@@ -42,8 +42,13 @@ public class Enemy : MonoBehaviour {
 
 		}
 
+
+	
 		
 	}
+
+
+
 
 
 }

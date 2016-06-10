@@ -23,22 +23,25 @@ public class Player : MonoBehaviour {
 			P_hp -= 25; //Haal 25 hp van de player af
 			print (P_hp); //Print HP 
 			}
+		if(other.gameObject.tag == "Bullet")
+		{
+			P_hp -= 25;
+			print (P_hp);
+
 
 		}
+	
+	}
 	void Update()
 	{
-		//if (P_hp >= Death)
+		//if (P_hp <= Death)
 		//{
 		//Destroy (gameObject);
 		//SceneManager.LoadScene (GameOverScreen);
 
 	}
+}
 
-
-
-
-
-	}
 		
 			
 	
