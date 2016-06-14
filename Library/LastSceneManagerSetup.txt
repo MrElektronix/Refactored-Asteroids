@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Noah Unity/Noah Scenes/Noah Main.unity
+- path: Assets/Noah Unity/Noah Scenes/GameOver.unity
   isLoaded: 1
   isActive: 1
