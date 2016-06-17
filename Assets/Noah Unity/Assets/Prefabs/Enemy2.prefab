@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11487898}
   m_Layer: 0
   m_Name: Untitled_6_Cube_Untitled_6_Cube1
-  m_TagString: Untagged
+  m_TagString: EnemyColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,6 @@ MonoBehaviour:
   Ehp: 100
   minHp: 0
   HitPoints: 25
-  Speed: 10
   ScoreValue: 100
 --- !u!114 &11484776
 MonoBehaviour:
@@ -123,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 484306, guid: 02ee6fec33ee02544b25d91d1ec50e39, type: 2}
   Enemy: {fileID: 460544}
+  Bullet: {fileID: 166472, guid: 423b3768da9790148bfaef2ef36ff7e6, type: 2}
+  Bulletforce: 800
 --- !u!114 &11487898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,7 +138,6 @@ MonoBehaviour:
   Ehp: 100
   minHp: 0
   HitPoints: 25
-  Speed: 10
   ScoreValue: 100
 --- !u!136 &13630154
 CapsuleCollider:
