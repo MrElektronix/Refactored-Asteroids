@@ -1,14 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Noah Unity\Noah Scripts\FollowScript.cs">
-    <Files>
-      <File FileName="Assets\Noah Unity\Noah Scripts\FollowScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Noah Unity\Noah Scripts\PickUp.cs" Line="1" Column="1" />
-      <File FileName="Assets\Noah Unity\Noah Scripts\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Noah Unity\Noah Scripts\ScoreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Noah Unity\Noah Scripts\Player.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

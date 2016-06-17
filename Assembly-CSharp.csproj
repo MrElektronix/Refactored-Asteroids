@@ -65,10 +65,10 @@
      <Compile Include="Assets\Noah Unity\Noah Scripts\BulletSpawnerScript.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\Enemy.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\FollowScript.cs" />
+     <Compile Include="Assets\Noah Unity\Noah Scripts\HealthBar.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\LoadOnScript.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\MouseCamera.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\OnClick.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\PickUp.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\Player.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\Playerscript.cs" />
      <Compile Include="Assets\Noah Unity\Noah Scripts\ScoreManager.cs" />
