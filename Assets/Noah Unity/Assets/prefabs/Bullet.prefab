@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 452544}
   - 33: {fileID: 3376784}
-  - 65: {fileID: 6506588}
   - 23: {fileID: 2370238}
   - 54: {fileID: 5408080}
+  - 136: {fileID: 13611320}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: PlayerBullet
@@ -63,7 +63,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146088}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5408080
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -79,8 +79,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6506588
-BoxCollider:
+--- !u!136 &13611320
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -88,8 +88,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.6
+  m_Height: 1
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
