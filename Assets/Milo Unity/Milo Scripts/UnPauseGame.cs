@@ -10,7 +10,6 @@ public class UnPauseGame : MonoBehaviour {
 	}
 
 	public void LoadGameAgain() {
-		//SceneManager.LoadScene (2);
 		PauseScreen.SetActive(false);
 		Time.timeScale = 1;
 	}
