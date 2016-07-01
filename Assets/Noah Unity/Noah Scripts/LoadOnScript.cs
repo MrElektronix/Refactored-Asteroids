@@ -4,11 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadOnScript : MonoBehaviour {
 
-	public void LoadOnClick()
+	public void LoadGameOnClick()
 	{
-		
 		SceneManager.LoadScene (1);
-		
 	}
 
 }
