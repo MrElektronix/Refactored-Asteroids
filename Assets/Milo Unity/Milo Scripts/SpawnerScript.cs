@@ -24,8 +24,6 @@ public class SpawnerScript : MonoBehaviour {
 			nextSpawnTime = Time.time + currentWave.timeBetweenSpawns;
 
 			EnemyDeath spawnedEnemy = Instantiate(enemy, transform.position, Quaternion.identity) as EnemyDeath;
-			//spawnedEnemy.OnDeath += OnEnemyDeath;
-
 		}
 	}
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Milo Unity/Milo Scenes/GyroTest3.unity
+- path: Assets/Noah Unity/Noah Scenes/Main.unity
   isLoaded: 1
   isActive: 1

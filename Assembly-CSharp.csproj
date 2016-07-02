@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{70261382-45EB-0236-7EA2-855FCD841B8F}</ProjectGuid>
+    <ProjectGuid>{FE395E47-E17B-AF86-B26A-20F0C72DD3D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,40 +45,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Blips.cs" />
-     <Compile Include="Assets\Destroy.cs" />
-     <Compile Include="Assets\EnemyMove.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\BackToMainMenu.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\Bullets.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\Button.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\Cam.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\EnemyDeath.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\GyroCamera.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\GyroDisplay.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\Gyroscope.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\Movement.cs" />
-     <Compile Include="Assets\Milo Unity\Milo Scripts\OnGameLoad.cs" />
+     <Compile Include="Assets\Milo Unity\Milo Scripts\LoadOnScript.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\PauseGame.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\PlayerDeath.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\RotatePlayer.cs" />
+     <Compile Include="Assets\Milo Unity\Milo Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Milo Unity\Milo Scripts\SpawnerScript.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\StartGameButton.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\TouchInput.cs" />
      <Compile Include="Assets\Milo Unity\Milo Scripts\UnPauseGame.cs" />
-     <Compile Include="Assets\MiniMap.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\BulletSpawnerScript.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\Enemy.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\FollowScript.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\HealthBar.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\LoadOnScript.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\MouseCamera.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\OnClick.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\PickUp.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\Player.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\Playerscript.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\ScoreManager.cs" />
-     <Compile Include="Assets\Noah Unity\Noah Scripts\SpawnerScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -6,7 +6,7 @@ public class EnemyAttack : MonoBehaviour {
 	public Transform Player;
 	public Transform Enemy;
 
-	float MoveSpeed = -7.0f;
+	float MoveSpeed = -9.0f;
 	int AfstandAttack = 40;
 
 	public GameObject Bullet;
@@ -22,6 +22,7 @@ public class EnemyAttack : MonoBehaviour {
 
 	void Update()
 	{
+		if (!Player) return;
 		float distance = Vector3.Distance (transform.position, Player.transform.position);
 		Vector3 direction = (transform.position - Player.position).normalized;
 	
@@ -36,7 +37,7 @@ public class EnemyAttack : MonoBehaviour {
 	}
 
 	void Example() {
-		InvokeRepeating ("Shoot", 8, 10f);
+		InvokeRepeating ("Shoot", 9, 10f);
 	}
 		
 
@@ -44,6 +45,7 @@ public class EnemyAttack : MonoBehaviour {
 	{
 		//TempBullet.transform.position += (bulletdirection * Bulletforce ) * Time.deltaTime;
 		//Destroy (TempBullet, 10.0f);
+		if (!playerDeath) return;
 
 		if (playerDeath.Dead) {
 			CancelInvoke ();
